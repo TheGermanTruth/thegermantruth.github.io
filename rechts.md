@@ -24,7 +24,7 @@ title: "Verfassungswidrig, Rechtsextremistisch. Individuelle Freiheit vernichtet
 
 ---
 
-## Warum darf eine Gruppe menschenverachtender Personen wie die AFD, auf Bundes- und Landesebene an der Gestaltung dieses Landes mitwirken?
+## Warum darf eine gesichert rechtsextremistische, verfassungswidrige Partei menschenverachtender Personen an der Gestaltung dieses Landes mitwirken?
 
 ---
     
