@@ -53,12 +53,13 @@ Seit 2024 bin ich Rentner, bleibe aber weiterhin in Teilzeit aktiv. Die abwechsl
 ---
 
 </div>
+
     
 <div class="column" markdown="1">
 
 ---
 
-![Klaus Runge]({{ '/images/Klaus_Runge.jpg' | relative_url }}){: width="100%"}
+[![Klaus Runge]({{ '/images/Klaus_Runge.jpg' | relative_url }}){: .shadow-img width="80%"}]({{ '/images/Klaus_Runge.jpg' | relative_url }}){: target="_blank" }
     
 </div>
 
@@ -66,9 +67,8 @@ Seit 2024 bin ich Rentner, bleibe aber weiterhin in Teilzeit aktiv. Die abwechsl
 
 ---
 
-<div class="section one-column" markdown="1">
+<div class="section one-column" align="center" markdown="1">
 
-<div align="center">
 
 ---
 
@@ -76,7 +76,6 @@ Diese Webseiten sind rein privat. Sie dienen ausschließlich dem Zweck meine Ged
 
 ---
 
-</div>
 
 </div>
 
