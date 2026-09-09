@@ -66,13 +66,13 @@ title: "Sollten wir Angst vor künstlicher Intelligenz haben?"
 
 ---
 
-## Fake oder Wahrheit?
+# Wahrheit? Lüge? Oder doch Milch?
 
 <video src="{{ '/video/milch.mp4' | relative_url }}" controls width="100%"></video>
 
 ---
 
-### Das ist natürlich ein Fake Video! Aber, wie einfach ist das denn bitte? Ein Foto hochladen, ein Satz im Prompt schreiben, fertig!
+### Ein Spaß, und natürlich ein Fake Video! Aber, wie einfach ist das Heute schon? Ein Foto hochladen, eine kurze Beschreibung im Prompt, fertig!
 
 </div>
 
