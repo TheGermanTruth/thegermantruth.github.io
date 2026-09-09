@@ -17,9 +17,6 @@ title: "Ich möchte Dinge nicht nur nutzen, sondern verstehen und gestalten."
 
 ---
 
-<br>&nbsp;
-<br>&nbsp;
-<br>&nbsp;
   
 # Ich bin
 
