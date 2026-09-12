@@ -127,19 +127,19 @@ die nächste KI-Generation genau so trainiert, dass sie diesen Test besteht.
 > ### Meine Analyse bringt das Kernproblem glasklar auf den Punkt.
 > ### Und nein, das ist keine Folge der aktuellen KI-Welle, sondern eine Altlast:
 > ### Und das Problem hat einen Namen:
-> ## Anonymität!
+> # !Anonymität!
 >
 
 ---
 
-### Das ist der Kern dieser Debatte, die weit vor KI begonnen hat: 
+### Das ist der Kern dieser Debatte, die schon weit vor KI begonnen hat! 
 ### Die fehlende Rechenschaftspflicht durch Anonymität im Netz ist der Verstärker,
 ### der Falschinformationen und Missbrauch überhaupt erst massentauglich und gefahrlos macht.
 
 ---
 ---
 
-## Es muss die digitale Öffentlichkeit der physischen Öffentlichkeit gleichgestellt werden!
+# Es muss die digitale Öffentlichkeit der physischen Öffentlichkeit gleichgestellt werden!
 
 ---
 ---
