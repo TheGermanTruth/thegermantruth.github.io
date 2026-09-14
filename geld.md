@@ -174,14 +174,14 @@ Steuern, die von Städten und Gemeinden individuell erhoben werden.
 
 ---
 
-### Einige Beispiele: 
+### Einige Beispiele: (Stand Juli 2026)
  
 Bei fast allen Einkäufen greift der Staat **doppelt** zu: Über eine **spezifische Steuer** (Sekt-, Tabak-, Energiesteuer usw.) und zusätzlich über die
 **Mehrwertsteuer** (die meist auch auf die spezifische Steuer berechnet wird).
 
 ---
 
-### 1. 10 Liter Super Benzin (Gesamtpreis: 21,90 €)
+### 1. 10 Liter Super Benzin (Gesamtpreis: 21,90 €) (aktuell ca. 25,00 €)
 
 1. **Energiesteuer:** Fix **65,45 Cent** pro Liter → **6,55 €**
 
@@ -191,6 +191,10 @@ Bei fast allen Einkäufen greift der Staat **doppelt** zu: Über eine **spezifis
        
 ***Der Staat bekommt:*** ca. **11,20 €** (rund **51 %** des Gesamtpreises).
 
+---
+---
+### Der Benzinpreis steigt und steigt und steigt! Die Regierung und die Konzerne können gar nicht aufhören zu Grinsen weil sich ihre Kassen füllen! Warum machen das ALLE mit?
+---
 ---
 
 ### 2. Eine Schachtel Zigaretten (20 Stück, Gesamtpreis: 8,80 €)
