@@ -440,7 +440,7 @@ Menschen und Geringverdiener die Zeche zahlen, verliert der Staat den gesellscha
 
 <div class="section one-column" markdown="1">
 
-## Aber, es gibt ein wenig Licht am Ende des Tunnels! Aber leider nicht für unsere Generationen.
+## Aber, es gibt ein wenig Licht am Ende des Tunnels! Nur leider nicht für unsere Generationen.
 
 ### Das Klima selbst lässt sich wieder abkühlen („Overshoot“-Szenario)
 
@@ -457,6 +457,19 @@ Menschen und Geringverdiener die Zeche zahlen, verliert der Staat den gesellscha
 ### Kipppunkte (Tipping Points): Wird das Eis in Grönland einmal instabil oder stirbt das Amazonas-Becken durch Trockenheit großflächig ab, hilft auch eine spätere Abkühlung nicht direkt – das Ökosystem ist kollabiert und braucht Tausende Jahre zur Regeneration.
 
 ### Artensterben: Ausgestorbene Tier- und Pflanzenarten kommen nicht zurück, egal wie kühl es wieder wird.
+
+---
+
+## Sollten wir das Overshoot-Szenario einleiten, sprechen wir im besten Fall von einer Phase der Erwärmung von der Dauer eines Menschenlebens (ca. 40–50 Jahre), bis die atmosphärischen Temperaturen wieder sinken. Die damit verbundenen Folgewirkungen – allen voran der Meeresspiegelanstieg – werden jedoch noch manche Generationen danach beschäftigen.
+
+---
+
+## Selbst wenn es gelingen sollte, die Lufttemperatur innerhalb von 40 Jahren wieder abzusenken, reagieren verschiedene Teilen des Erdsystems extrem unterschiedlich schnell
+
+### Atmosphäre & Landflächen               Schnell (Jahre bis Jahrzehnte)
+### Extremwetter (Regen/Dürre)             Mittel (Jahrzehnte)
+### Ozeane & Meeresspiegel                 Extrem langsam (Jahrhunderte bis Jahrtausende)
+### Eisschilde (Grönland/Antarktis)        Träge (Jahrhunderte)
 
 ---
 
