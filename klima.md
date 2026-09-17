@@ -438,6 +438,36 @@ Menschen und Geringverdiener die Zeche zahlen, verliert der Staat den gesellscha
 
 </div>
 
+<div class="section one-column" markdown="1">
+
+## Aber, es gibt ein wenig Licht am Ende des Tunnels! Aber leider nicht für unsere Generationen.
+
+### Das Klima selbst lässt sich wieder abkühlen („Overshoot“-Szenario)
+
+### Das Erdklima reagiert direkt auf die Treibhausgaskonzentration in der Atmosphäre. Wenn wir es schaffen, der Atmosphäre mehr CO 2 zu entziehen, als wir hineinpumpen (sogenannte Negative Emissionen), sinkt die Treibhausgaskonzentration und die Erde beginnt sich wieder abzukühlen.
+
+---
+
+## Das Problem!
+
+### Auch wenn die Temperatur wieder sinkt, geschehen während der Heißphase Dinge, die nicht einfach wieder rückgängig gemacht werden können:
+
+### Trägheit der Systeme: Das Schmelzen der Eisschilde (Grönland, Antarktis) und das Aufwärmen der tiefen Ozeane brauchen Jahrhunderte bis Jahrtausende, um sich wieder abzukühlen oder aufzubauen. Der Meeresspiegel würde also selbst bei sinkenden Temperaturen noch lange weitersteigen.
+
+### Kipppunkte (Tipping Points): Wird das Eis in Grönland einmal instabil oder stirbt das Amazonas-Becken durch Trockenheit großflächig ab, hilft auch eine spätere Abkühlung nicht direkt – das Ökosystem ist kollabiert und braucht Tausende Jahre zur Regeneration.
+
+### Artensterben: Ausgestorbene Tier- und Pflanzenarten kommen nicht zurück, egal wie kühl es wieder wird.
+
+---
+
+## Fazit
+
+### Wir können das Klima prinzipiell wieder auf ein besseres Niveau zurückholen. Die Realität ist aber: Prävention ist drastisch billiger und sicherer als das nachträgliche Rausfiltern von CO₂. Jedes Zehntelgrad, das wir jetzt vermeiden, erspart uns Schäden, die sich später selbst mit künstlicher Abkühlung nicht mehr reparieren lassen.
+
+---
+---
+
+</div>
 
 
 
