@@ -1,7 +1,7 @@
 <div align="center">
 
 # The German Truth
-### Meine Wahrheit – oder warum wir die Welt nicht retten können.
+### Die Frage – ist diese Welt zu retten?
 
 
 ---
