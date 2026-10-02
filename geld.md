@@ -29,7 +29,7 @@ title: "Überall versteckte Steuern!"
 <div class="section one-column" markdown="1">
 
 ---
-## Ein Beispiel:
+## Beispiele:
 
 ### Der Strompreis, ~60 % bestehen aus Steuern, Umlagen und den staatlich festgesetzten Netzgebühren.
 
