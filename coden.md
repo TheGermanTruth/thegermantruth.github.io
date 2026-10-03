@@ -13,11 +13,11 @@ permalink: /coden.html
 
 Klaus Runge ist der Programmierer und Kopf hinter dem historischen Retro-Entwickler-Label SicSac Software.
 
-Zu seinen bekanntesten Programmen und Spielen unter dem Namen SicSac Software gehören:
-• Blob (1994): Ein von ihm programmiertes Puzzle-/Logikspiel im Tetris-Stil, das damals über den Distributor Maxon Computer vertrieben wurde.
-• 17+4 (1993): Eine digitale Umsetzung des bekannten Kartenspiels (Blackjack-Variante) für den Atari ST.
-• Big Jack (1994): Ein weiteres Spiel aus seiner Feder.
-• Black I.I. (1993):
+Zu seinen bekanntesten Programmen und Spielen unter dem Namen SicSac Software gehören:<br>&nbsp;
+• Blob (1994): Ein von ihm programmiertes Puzzle-/Logikspiel im Tetris-Stil, das damals über den Distributor Maxon Computer vertrieben wurde.<br>&nbsp;
+• 17+4 (1993): Eine digitale Umsetzung des bekannten Kartenspiels (Blackjack-Variante) für den Atari ST.<br>&nbsp;
+• Big Jack (1994): Ein weiteres Spiel aus seiner Feder.<br>&nbsp;
+• Black I.I. (1993):<br>&nbsp;
 
 ---
 
