@@ -91,19 +91,33 @@ h1, h2, h3 {
 }
 
 /* ===== Galerie ===== */
+/* 1. Haupt-Raster */
 .gallery-grid {
   display: grid;
-  /* Erstellt ein flexibles Raster: Mindestens 200px breit, fügt sich automatisch an den Bildschirm an */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;          /* Abstand zwischen den Bildern */
-  margin-top: 20px;   /* Abstand nach oben */
+  gap: 15px;
+  margin-top: 20px;
 }
 
+/* 2. Link-Behälter um die Bilder (NEU) */
+.gallery-grid a {
+  display: block;      /* Macht den gesamten Link-Bereich klickbar */
+  overflow: hidden;    /* Verhindert Überstehen beim Zoomen */
+  border-radius: 8px;  /* Abgerundete Ecken */
+}
+
+/* 3. Bildeigenschaften */
 .gallery-grid img {
-  width: 100%;        /* Bild füllt die gesamte Spaltenbreite aus */
-  height: 180px;      /* Feste Höhe für einheitliche Bildkacheln */
-  object-fit: cover; /* Schneidet das Bild sauber zu, damit es nicht verzerrt */
-  border-radius: 8px; /* Leicht abgerundete Ecken */
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;      /* Verhindert kleine Lücken unter dem Bild */
+  transition: transform 0.2s ease; /* Weicher Zoom-Effekt */
+}
+
+/* 4. Effekte beim Drüberfahren (NEU) */
+.gallery-grid a:hover img {
+  transform: scale(1.05); /* Bild vergrößert sich leicht beim Hover */
 }
 
 
