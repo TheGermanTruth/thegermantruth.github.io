@@ -53,4 +53,54 @@ Zu seinen bekanntesten Programmen und Spielen unter dem Namen SicSac Software ge
 
 ---
 
+### Mit dem Spiel Blob (1994) gelang mir Damals ein kleiner Meilenstein: Es wurde vom bekannten Maxon Computer Verlag aufgenommen und vertrieben. Maxon war im deutschsprachigen Raum eine absolute Institution für Atari-Nutzer (unter anderem als Herausgeber des legendären ST-Magazins). Dass ein Spiel dort gelistet wurde, kam einem Ritterschlag für einen Hobby-Programmierer wie mir gleich.
+
+---
+
+</div>
+
+<div class="section one-column" markdown="1">
+
+### Nun bin ich vor einigen Jahren wieder angefangen zu coden, diesmal mit Windows und C#. Ich habe einige Spiele von Damals neu in C# geschrieben, aber auch einiges Neues. 
+
+### Hier sind einige alte Bilder der letzten Jahre.
+
+---
+
+<div class="gallery-grid">
+  
+<a href="/images/coden/bigtetris.png" target="_blank">
+    <img src="/images/coden/bigtetris.png" alt="Blackjack">
+</a>
+<a href="/images/coden/blackjack.png" target="_blank">
+    <img src="/images/coden/blackjack.png" alt="Dropdown erstellen">
+</a>
+<a href="/images/coden/boysngirls.png" target="_blank">
+    <img src="/images/coden/boysngirls.png" alt="Einarmiger Bandit">
+</a>  
+<a href="/images/coden/kniffel.png" target="_blank">
+    <img src="/images/coden/kniffel.png" alt="Logik Puzzle">
+</a>  
+<a href="/images/coden/qetris.png" target="_blank">
+    <img src="/images/coden/qetris.png" alt="Drei gewinnt">
+</a>
+<a href="/images/coden/scriptlab.png" target="_blank">
+    <img src="/images/coden/scriptlab.png" alt="Verschiebe Puzzle">
+</a>  
+<a href="/images/coden/siebentuerme.png" target="_blank">
+    <img src="/images/coden/siebentuerme.png" alt="Sieben Türme Domino">
+</a>    
+<a href="/images/coden/tripledice.png" target="_blank">
+    <img src="/images/coden/tripledice.png" alt="Sieben Türme Domino">
+</a>  
+
+</div>
+
+---
+
+
+
+---
+
+---
 </div>
