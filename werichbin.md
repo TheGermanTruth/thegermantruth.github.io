@@ -35,7 +35,7 @@ Ich habe in Agenturen gearbeitet, war selbstständig und habe über viele Jahre 
 und Möbel entworfen und gebaut. 
 
 Gleichzeitig fasziniert mich auch immer die digitale und technische Welt. In den frühen 90er Jahren habe ich programmieren gelernt, und die Neugier hat mich nie
-verlassen – so kam jetzt noch C# als neue Programmiersprache hinzu. [Coden](https://thegermantruth.github.io/coden.html){:target="_blank" rel="noopener"}
+verlassen – so kam jetzt noch C# als neue Programmiersprache hinzu.   [Einige Info´s dazu >>](https://thegermantruth.github.io/coden.html){:target="_blank" rel="noopener"}
 
 
 Ob Logik, Physik oder Kunst, Code oder Handwerk: Am Ende geht es mir immer darum, etwas
