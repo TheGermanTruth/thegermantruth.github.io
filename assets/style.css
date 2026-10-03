@@ -91,35 +91,36 @@ h1, h2, h3 {
 }
 
 /* ===== Galerie ===== */
-/* 1. Haupt-Raster */
+
+/* 1. Haupt-Grid: Passt Spalten automatisch an */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 15px;
   margin-top: 20px;
 }
 
-/* 2. Link-Behälter um die Bilder (NEU) */
+/* 2. Link-Container: Erzwingt das quadratische Format (1/1) */
 .gallery-grid a {
-  display: block;      /* Macht den gesamten Link-Bereich klickbar */
-  overflow: hidden;    /* Verhindert Überstehen beim Zoomen */
-  border-radius: 8px;  /* Abgerundete Ecken */
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 1 / 1; /* Macht alle Felder automatisch quadratisch */
 }
 
-/* 3. Bildeigenschaften */
+/* 3. Bild: Schneidet das Original sauber zu ohne zu verzerren */
 .gallery-grid img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;      /* Verhindert kleine Lücken unter dem Bild */
-  transition: transform 0.2s ease; /* Weicher Zoom-Effekt */
+  height: 100%;
+  object-fit: cover; /* Verhindert Verzerrung */
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-/* 4. Effekte beim Drüberfahren (NEU) */
+/* 4. Hover-Effekt beim Drüberfahren */
 .gallery-grid a:hover img {
-  transform: scale(1.05); /* Bild vergrößert sich leicht beim Hover */
+  transform: scale(1.05);
 }
-
 
 
 
