@@ -61,9 +61,9 @@ Zu seinen bekanntesten Programmen und Spielen unter dem Namen SicSac Software ge
 
 <div class="section one-column" markdown="1">
 
-### Nun bin ich vor einigen Jahren wieder angefangen zu coden, diesmal mit Windows und C#. Ich habe einige Spiele von Damals neu in C# geschrieben, aber auch einiges Neues. 
+### Nun bin ich vor einigen Jahren wieder angefangen zu coden, diesmal mit Windows und C#. Ich habe einige Spiele von Damals neu in C# geschrieben, aber auch einige neue Anwendungen die ich hier aber nicht zeigen kann. 
 
-### Hier sind einige alte Bilder der letzten Jahre.
+### Hier sind einige Arbeiten der letzten Jahre.
 
 ---
 
