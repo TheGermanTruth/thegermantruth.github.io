@@ -7,7 +7,7 @@ permalink: /coden.html
 ---
 
 ### Wenn man "SicSac Software" googelt:
-### SicSac Software (Historischer Software-Entwickler für Atari ST) ***...das finde ich so lustig!***
+### SicSac Software (Historischer Software-Entwickler für Atari ST)  ***...das finde ich so lustig!***
 
 ---
 
