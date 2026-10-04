@@ -7,11 +7,11 @@ permalink: /coden.html
 ---
 
 ### Wenn man "SicSac Software" googelt:
-### SicSac Software (Historischer Software-Entwickler für Atari ST) ...ist das lustig!
+### SicSac Software (Historischer Software-Entwickler für Atari ST) ***...das finde ich so lustig!***
 
 ---
 
-Klaus Runge ist der Programmierer und Kopf hinter dem historischen Retro-Entwickler-Label SicSac Software.
+Klaus Runge ist der Programmierer und Kopf hinter dem historischen Retro-Entwickler-Label SicSac Software. ***(Sagt Google)***
 
 Zu seinen bekanntesten Programmen und Spielen unter dem Namen SicSac Software gehören:<br>&nbsp;
 • Blob (1994): Ein von ihm programmiertes Puzzle-/Logikspiel im Tetris-Stil, das damals über den Distributor Maxon Computer vertrieben wurde.<br>&nbsp;
@@ -53,7 +53,7 @@ Zu seinen bekanntesten Programmen und Spielen unter dem Namen SicSac Software ge
 
 ---
 
-### Mit dem Spiel Blob (1994) gelang mir Damals ein kleiner Meilenstein: Es wurde vom bekannten Maxon Computer Verlag aufgenommen und vertrieben. Maxon war im deutschsprachigen Raum eine absolute Institution für Atari-Nutzer (unter anderem als Herausgeber des legendären ST-Magazins). Dass ein Spiel dort gelistet wurde, kam einem Ritterschlag für einen Hobby-Programmierer wie mir gleich.
+### Mit dem Spiel Blob (1994) gelang mir Damals ein kleiner Meilenstein: Es wurde vom bekannten Maxon Computer Verlag aufgenommen und vertrieben. Maxon war im deutschsprachigen Raum eine absolute Institution für Atari-Nutzer (unter anderem als Herausgeber des legendären ST-Magazins). Dass ein Spiel dort gelistet wurde, und ein kleiner Artikel geschrieben wurde, kam einem Ritterschlag für einen Hobby-Programmierer wie mir gleich.
 
 ---
 
@@ -61,7 +61,7 @@ Zu seinen bekanntesten Programmen und Spielen unter dem Namen SicSac Software ge
 
 <div class="section one-column" markdown="1">
 
-### Nun bin ich vor einigen Jahren wieder angefangen zu coden, diesmal mit Windows und C#. Ich habe einige Spiele von Damals neu in C# geschrieben, aber auch einige neue Anwendungen die ich hier aber nicht zeigen kann. 
+### Nun bin ich vor einigen Jahren wieder angefangen zu coden, diesmal unter Windows 11 und C#. Ich habe einige Spiele von Damals neu in C# geschrieben, aber auch einige neue Anwendungen die ich hier aber nicht zeigen kann. 
 
 ### Hier sind einige Arbeiten der letzten Jahre.
 
@@ -70,28 +70,28 @@ Zu seinen bekanntesten Programmen und Spielen unter dem Namen SicSac Software ge
 <div class="gallery-grid">
   
 <a href="/images/coden/bigtetris.png" target="_blank">
-    <img src="/images/coden/bigtetris.png" alt="Blackjack">
+    <img src="/images/coden/bigtetris.png" alt="Riesentetris">
 </a>
 <a href="/images/coden/blackjack.png" target="_blank">
-    <img src="/images/coden/blackjack.png" alt="Dropdown erstellen">
+    <img src="/images/coden/blackjack.png" alt="Blackjack">
 </a>
 <a href="/images/coden/boysngirls.png" target="_blank">
-    <img src="/images/coden/boysngirls.png" alt="Einarmiger Bandit">
+    <img src="/images/coden/boysngirls.png" alt="Kontakte">
 </a>  
 <a href="/images/coden/kniffel.png" target="_blank">
-    <img src="/images/coden/kniffel.png" alt="Logik Puzzle">
+    <img src="/images/coden/kniffel.png" alt="Kniffel">
 </a>  
 <a href="/images/coden/qetris.png" target="_blank">
-    <img src="/images/coden/qetris.png" alt="Drei gewinnt">
+    <img src="/images/coden/qetris.png" alt="Tetris Wagerecht">
 </a>
 <a href="/images/coden/scriptlab.png" target="_blank">
-    <img src="/images/coden/scriptlab.png" alt="Verschiebe Puzzle">
+    <img src="/images/coden/scriptlab.png" alt="Autorensoftware">
 </a>  
 <a href="/images/coden/siebentuerme.png" target="_blank">
     <img src="/images/coden/siebentuerme.png" alt="Sieben Türme Domino">
 </a>    
 <a href="/images/coden/tripledice.png" target="_blank">
-    <img src="/images/coden/tripledice.png" alt="Sieben Türme Domino">
+    <img src="/images/coden/tripledice.png" alt="Drei Gewinnt Spiel">
 </a>  
 
 </div>
