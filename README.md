@@ -1,7 +1,7 @@
 <div align="center">
 
 # The German Truth
-### Die Frage – ist diese Welt zu retten?
+### Gedanken zu unserer Welt.
 
 
 ---
