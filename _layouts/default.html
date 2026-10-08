@@ -17,6 +17,9 @@
   <!-- SEO Meta Description -->
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
+   <!-- Kanonische URL (Verhindert Duplicate Content) -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+
   <!-- Stylesheets & Favicon -->
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
