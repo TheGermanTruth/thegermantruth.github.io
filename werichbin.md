@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Ich möchte Dinge nicht nur nutzen, sondern verstehen und gestalten."
+title: "Klaus Runge. Ich möchte Dinge nicht nur nutzen, sondern verstehen und gestalten."
 ---
 
 <div class="section one-column" markdown="1">
