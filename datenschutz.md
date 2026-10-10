@@ -1,5 +1,6 @@
 ---
 permalink: /datenschutz.html
+title: "Datenschutzerklärung"
 ---
 
 <div class="section one-column" markdown="1">
