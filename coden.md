@@ -1,5 +1,6 @@
 ---
 permalink: /coden.html
+title: "Programmieren 1990 und 2025"
 ---
 
 <div class="section one-column" markdown="1">
