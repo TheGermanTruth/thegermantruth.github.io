@@ -248,8 +248,6 @@ Bundesregierung, den juristischen Weg vor dem Bundesverfassungsgericht einzuleit
 
 ---
 
-### 74 % der Weltbevölkerung leben heute in Autokratien oder Diktaturen. Aber wer hat die höchste Lebensqualität? Die Daten zeigen glasklar: Die glücklichsten, sichersten und wohlhabendsten Gesellschaften der Erde liegen allesamt in jenen mageren 26 %, die ihre Freiheit und Demokratie verteidigen. Wer die Demokratie abschafft, verliert nicht nur seine Stimme – er verliert langfristig auch seine Lebensqualität, seinen Wohlstand und seine Freiheit!
-
 ---
 
 <br>&nbsp;
