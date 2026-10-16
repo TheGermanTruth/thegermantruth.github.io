@@ -1,1 +1,622 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demokratie vs. Autokratie: 100 Jahre im Wandel (1925–2026)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        democracy: {
+                            light: '#3b82f6',
+                            DEFAULT: '#2563eb',
+                            dark: '#1d4ed8',
+                            glow: 'rgba(59, 130, 246, 0.3)'
+                        },
+                        autocracy: {
+                            light: '#ef4444',
+                            DEFAULT: '#dc2626',
+                            dark: '#b91c1c',
+                            glow: 'rgba(239, 68, 68, 0.3)'
+                        },
+                        hybrid: '#f59e0b',
+                        darkbg: '#0f172a',
+                        cardbg: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
+        /* Custom Scrollbars */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .glow-democracy {
+            box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.4);
+        }
+        .glow-autocracy {
+            box-shadow: 0 0 25px -5px rgba(239, 68, 68, 0.4);
+        }
+        
+        .wave-gradient-1 {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(59, 130, 246, 0.05) 100%);
+        }
+        
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .light .glass-panel {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        /* Timeline connector line glow */
+        .timeline-line {
+            background: linear-gradient(to bottom, #ef4444 0%, #3b82f6 50%, #ef4444 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans transition-colors duration-300 light:bg-slate-50 light:text-slate-900">
+
+    <!-- Top Header Navigation -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-slate-800 light:border-slate-200 px-4 lg:px-8 py-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="p-2.5 bg-gradient-to-tr from-blue-600 to-red-600 rounded-xl text-white shadow-lg">
+                    <i data-lucide="scale" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-red-400 bg-clip-text text-transparent">
+                        100 Jahre im Wandel: Demokratie vs. Autokratie
+                    </h1>
+                    <p class="text-xs text-slate-400 light:text-slate-500">
+                        Eine visuelle Zeitachse der globalen Herrschaftsformen (1925 – 2026)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats & Controls -->
+            <div class="flex items-center gap-3 w-full md:w-auto justify-end">
+                <button id="themeToggle" class="p-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 light:bg-slate-200 light:hover:bg-slate-300 light:text-slate-700 transition">
+                    <i data-lucide="sun" class="w-5 h-5 hidden light:block"></i>
+                    <i data-lucide="moon" class="w-5 h-5 block light:hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 lg:px-8 py-8 space-y-12">
+
+        <!-- Executive Summary Banner / Wave Theory Intro -->
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="lg:col-span-2 glass-panel p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div>
+                    <div class="flex items-center space-x-2 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">
+                        <i data-lucide="activity" class="w-4 h-4"></i>
+                        <span>Huntingtons Theorie & Moderne Forschung</span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3 text-white light:text-slate-900">
+                        Die Wellen der Demokratisierung & Rückschläge
+                    </h2>
+                    <p class="text-sm text-slate-300 light:text-slate-600 leading-relaxed mb-4">
+                        Die Geschichte der letzten 100 Jahre ist kein linearer Fortschritt, sondern ein ständiges Ebbe-und-Flut-System zwischen Freiheit und Autokratie. Auf große Demokratisierungswellen folgten historisch stets Gegenwellen der Autokratisierung – aktuell befinden wir uns in der <strong class="text-red-400">3. Autokratisierungswelle</strong>.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-800 light:border-slate-200">
+                    <div class="bg-slate-900/60 light:bg-slate-100 p-3 rounded-xl border border-slate-800 light:border-slate-200">
+                        <span class="block text-xs text-slate-400">1920–1942</span>
+                        <span class="text-sm font-bold text-red-400">1. Gegenwelle</span>
+                        <span class="block text-[10px] text-slate-500">Faschismus & Totalitarismus</span>
+                    </div>
+                    <div class="bg-slate-900/60 light:bg-slate-100 p-3 rounded-xl border border-slate-800 light:border-slate-200">
+                        <span class="block text-xs text-slate-400">1943–1962</span>
+                        <span class="text-sm font-bold text-blue-400">2. Dem.-Welle</span>
+                        <span class="block text-[10px] text-slate-500">Nachkriegszeit & Dekolonisierung</span>
+                    </div>
+                    <div class="bg-slate-900/60 light:bg-slate-100 p-3 rounded-xl border border-slate-800 light:border-slate-200">
+                        <span class="block text-xs text-slate-400">1974–2005</span>
+                        <span class="text-sm font-bold text-blue-400">3. Dem.-Welle</span>
+                        <span class="block text-[10px] text-slate-500">Ende Ostblock & Diktaturen</span>
+                    </div>
+                    <div class="bg-slate-900/60 light:bg-slate-100 p-3 rounded-xl border border-slate-800 light:border-slate-200">
+                        <span class="block text-xs text-slate-400">2010–Heute</span>
+                        <span class="text-sm font-bold text-red-400">3. Gegenwelle</span>
+                        <span class="block text-[10px] text-slate-500">Digitale Autokratie & Populismus</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Global Balance Quick Status -->
+            <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between border-l-4 border-blue-500">
+                <div>
+                    <h3 class="text-sm font-medium text-slate-400 light:text-slate-500 uppercase tracking-wider mb-1">
+                        Globale Verteilung (2025/2026)
+                    </h3>
+                    <div class="text-3xl font-extrabold text-white light:text-slate-900 mb-2 flex items-baseline gap-2">
+                        <span>72%</span>
+                        <span class="text-xs font-normal text-slate-400">der Weltbevölkerung leben in Autokratien</span>
+                    </div>
+                    <p class="text-xs text-slate-400 light:text-slate-600 mb-4">
+                        Laut aktuellen Studien (z. B. V-Dem Institute) ist das Niveau der Demokratie weltweit wieder auf den Stand von ca. 1985 zurückgefallen.
+                    </p>
+                </div>
+
+                <!-- Mini visual distribution bar -->
+                <div class="space-y-2">
+                    <div class="flex justify-between text-xs font-medium">
+                        <span class="text-blue-400">Demokratien (28%)</span>
+                        <span class="text-red-400">Autokratien (72%)</span>
+                    </div>
+                    <div class="h-3 w-full bg-slate-800 rounded-full overflow-hidden flex">
+                        <div class="bg-blue-500 h-full" style="width: 28%"></div>
+                        <div class="bg-red-500 h-full" style="width: 72%"></div>
+                    </div>
+                    <span class="text-[10px] text-slate-500 block text-right">Quelle: V-Dem & Freedom House Indikatoren</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Chart Section -->
+        <section class="glass-panel p-6 rounded-2xl relative">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                <div>
+                    <h3 class="text-xl font-bold text-white light:text-slate-900 flex items-center gap-2">
+                        <i data-lucide="line-chart" class="w-5 h-5 text-blue-400"></i>
+                        Verhältnis von Demokratien vs. Autokratien (1925 – 2026)
+                    </h3>
+                    <p class="text-xs text-slate-400">Prozentualer Anteil aller sovereignen Staaten weltweit</p>
+                </div>
+                <!-- Chart Legend / Info -->
+                <div class="flex items-center gap-4 text-xs font-medium">
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-3 h-3 rounded-full bg-blue-500 inline-block"></span>
+                        <span>Demokratien (%)</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+                        <span>Autokratien (%)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="h-64 sm:h-80 w-full">
+                <canvas id="ratioChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Filter Buttons / Era Navigation -->
+        <section class="space-y-4">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <h3 class="text-lg font-bold text-white light:text-slate-900 flex items-center gap-2">
+                    <i data-lucide="filter" class="w-5 h-5 text-purple-400"></i>
+                    Nach Epochen filtern
+                </h3>
+                <span class="text-xs text-slate-400" id="showingCount">Zeige alle 5 Epochen</span>
+            </div>
+
+            <div class="flex flex-wrap gap-2" id="eraFilterContainer">
+                <button data-era="all" class="era-btn active bg-blue-600 text-white px-4 py-2 rounded-xl text-xs font-semibold transition hover:bg-blue-500 shadow-lg shadow-blue-500/20">
+                    Alle 100 Jahre
+                </button>
+                <button data-era="1925-1945" class="era-btn bg-slate-800 text-slate-300 light:bg-slate-200 light:text-slate-700 px-4 py-2 rounded-xl text-xs font-medium transition hover:bg-slate-700 border border-slate-700/50 light:border-slate-300">
+                    1925–1945: Totalitarismus & Weltkrieg
+                </button>
+                <button data-era="1945-1970" class="era-btn bg-slate-800 text-slate-300 light:bg-slate-200 light:text-slate-700 px-4 py-2 rounded-xl text-xs font-medium transition hover:bg-slate-700 border border-slate-700/50 light:border-slate-300">
+                    1945–1970: Nachkrieg & Kalter Krieg
+                </button>
+                <button data-era="1970-1990" class="era-btn bg-slate-800 text-slate-300 light:bg-slate-200 light:text-slate-700 px-4 py-2 rounded-xl text-xs font-medium transition hover:bg-slate-700 border border-slate-700/50 light:border-slate-300">
+                    1970–1990: 3. Demokratisierungswelle
+                </button>
+                <button data-era="1990-2010" class="era-btn bg-slate-800 text-slate-300 light:bg-slate-200 light:text-slate-700 px-4 py-2 rounded-xl text-xs font-medium transition hover:bg-slate-700 border border-slate-700/50 light:border-slate-300">
+                    1990–2010: Höhepunkt der Liberalen Demokratie
+                </button>
+                <button data-era="2010-2026" class="era-btn bg-slate-800 text-slate-300 light:bg-slate-200 light:text-slate-700 px-4 py-2 rounded-xl text-xs font-medium transition hover:bg-slate-700 border border-slate-700/50 light:border-slate-300">
+                    2010–Heute: Digitale Autokratisierung
+                </button>
+            </div>
+        </section>
+
+        <!-- Interactive Timeline Section -->
+        <section class="relative">
+            <!-- Central Line for large screens -->
+            <div class="hidden lg:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 timeline-line rounded-full opacity-30 pointer-events-none"></div>
+
+            <div class="space-y-12" id="timelineList">
+                <!-- Timeline items will be injected by JS -->
+            </div>
+        </section>
+
+        <!-- Detail Modal for Events -->
+        <div id="eventModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+            <div class="glass-panel bg-slate-900 border border-slate-700 rounded-2xl max-w-lg w-full p-6 relative shadow-2xl transform scale-95 transition-transform duration-300 overflow-hidden" id="modalCard">
+                <button id="closeModal" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-white rounded-full bg-slate-800/50">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+                <span id="modalYear" class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs font-bold mb-3">1989</span>
+                <h3 id="modalTitle" class="text-xl font-bold text-white mb-2">Fall der Berliner Mauer</h3>
+                <p id="modalCategory" class="text-xs font-semibold uppercase tracking-wider text-purple-400 mb-4">Meilenstein der Demokratisierung</p>
+                <p id="modalDesc" class="text-sm text-slate-300 leading-relaxed mb-6">
+                    Detaillierte Beschreibung folgt...
+                </p>
+                <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700/50 flex items-center gap-3">
+                    <i data-lucide="globe" class="w-5 h-5 text-blue-400 shrink-0"></i>
+                    <span id="modalImpact" class="text-xs text-slate-300">Globale Auswirkung: Zusammenbruch des Ostblocks.</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="glass-panel border-t border-slate-800 light:border-slate-200 mt-20 py-8 px-4 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Visual Hist-Data Project. Daten angelehnt an V-Dem Institute & Freedom House.</p>
+            <div class="flex gap-4 text-slate-400">
+                <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-blue-500"></span> Demokratie</span>
+                <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-red-500"></span> Autokratie</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Logic & Interactive Script -->
+    <script>
+        // Timeline Data: 100 Years (1925 - 2026)
+        const timelineData = [
+            {
+                id: 1,
+                year: "1925 – 1933",
+                era: "1925-1945",
+                type: "autocracy", // 'democracy' or 'autocracy'
+                title: "Aufstieg des Faschismus & Scheitern der Weimarer Republik",
+                shortDesc: "Die erste Demokratisierungswelle kehrt sich um. Faschistische Regimes etablieren sich in Italien und Deutschland.",
+                fullDesc: "In den 1920ern kollabierten viele junge europäische Demokratien unter wirtschaftlichem Druck (Weltwirtschaftskrise 1929) und politischer Extremisierung. Mit der Machtübernahme der NSDAP 1933 verfällt die erste Demokratie auf deutschem Boden vollständig in den Totalitarismus.",
+                impact: "Beginn der 1. großen Gegenwelle gegen die Demokratie.",
+                icon: "shield-alert"
+            },
+            {
+                id: 2,
+                year: "1939 – 1945",
+                era: "1925-1945",
+                type: "autocracy",
+                title: "Zweiter Weltkrieg & Höhepunkt des Totalitarismus",
+                shortDesc: "Europa und Asien stehen weitgehend unter autokratischer und faschistischer Kontrolle.",
+                fullDesc: "Der Höhepunkt autoritärer und totalitärer Expansion. Durch den Zweiten Weltkrieg breiten sich faschistische Besatzungsregimes aus, während in der Sowjetunion der Stalinismus auf seinem Höhepunkt ist.",
+                impact: "Tiefpunkt globaler Freiheitsrechte im 20. Jahrhundert.",
+                icon: "swords"
+            },
+            {
+                id: 3,
+                year: "1945 – 1950",
+                era: "1945-1970",
+                type: "democracy",
+                title: "Die Zweite Demokratisierungswelle & UN-Gründung",
+                shortDesc: "Sieg der Alliierten bringt Demokratie nach Westeuropa und Japan zurück. Gründung der Vereinten Nationen (1945).",
+                fullDesc: "Nach dem Sieg über die Achsenmächte wurden in Deutschland, Italien und Japan stabile demokratische Systeme verankert. Die Allgemeine Erklärung der Menschenrechte (1948) setzt weltweit Maßstäbe.",
+                impact: "Neubegründung des internationalen Völkerrechts & Demokratien-Boom.",
+                icon: "sparkles"
+            },
+            {
+                id: 4,
+                year: "1950 – 1965",
+                era: "1945-1970",
+                type: "autocracy",
+                title: "Kalter Krieg & Dekolonisierungskonflikte",
+                shortDesc: "Der Ost-West-Konflikt führt zu Stellvertreterkriegen. Viele neue Staaten verfallen rasch in Autokratien.",
+                fullDesc: "Zwar erlangen viele Kolonien in Afrika und Asien die Unabhängigkeit, doch in vielen Fällen übernehmen Militärdiktaturen oder Einparteiensysteme die Macht (unterstützt von USA oder UdSSR im Kalten Krieg).",
+                impact: "2. Gegenwelle: Verfestigung von Diktaturen im Globalen Süden.",
+                icon: "globe-2"
+            },
+            {
+                id: 5,
+                year: "1974",
+                era: "1970-1990",
+                type: "democracy",
+                title: "Start der Dritte Demokratisierungswelle (Nelkenrevolution)",
+                shortDesc: "Die Nelkenrevolution in Portugal leitet den Sturz von Diktaturen in Südeuropa ein.",
+                fullDesc: "Am 25. April 1974 beendet der friedliche Militärputsch in Portugal die autoritäre Estado-Novo-Diktatur. Es folgt das Ende der Franco-Diktatur in Spanien (1975) und der Militärdiktatur in Griechenland.",
+                impact: "Auftakt zur bisher größten Welle der Demokratisierung weltweit.",
+                icon: "flower-2"
+            },
+            {
+                id: 6,
+                year: "1980er",
+                era: "1970-1990",
+                type: "democracy",
+                title: "Demokratisierung Lateinamerikas",
+                shortDesc: "Militärdiktaturen in Argentinien, Brasilien, Chile und Uruguay danken ab.",
+                fullDesc: "Nach Jahrzehnten grausamen Militärherrschaften (u.a. Operation Condor) erlangen die Bürger Lateinamerikas durch massiven zivilen Protest und wirtschaftliche Krisen der Diktaturen ihre Demokratien zurück.",
+                impact: "Rückzug des Militärs aus der Politik in Mittel- und Südamerika.",
+                icon: "flag"
+            },
+            {
+                id: 7,
+                year: "1989 – 1991",
+                era: "1990-2010",
+                type: "democracy",
+                title: "Fall des Eisernen Vorhangs & Zusammenbruch der UdSSR",
+                shortDesc: "Der Fall der Berliner Mauer 1989 markiert das Ende des Kommunismus in Osteuropa.",
+                fullDesc: "Der historische Höhepunkt des demokratischen Triumphs im 20. Jahrhundert. Francis Fukuyama spricht vom 'Ende der Geschichte'. Zahlreiche neue Demokratien entstehen in Mittel- und Osteuropa.",
+                impact: "Historischer Höchststand neuer Demokratien weltweit.",
+                icon: "landmark"
+            },
+            {
+                id: 8,
+                year: "1994",
+                era: "1990-2010",
+                type: "democracy",
+                title: "Ende der Apartheid in Südafrika",
+                shortDesc: "Nelson Mandela wird zum ersten schwarzen Präsidenten in freien Wahlen gewählt.",
+                fullDesc: "Das rassistische Apartheid-Regime bricht zusammen. Südafrika gibt sich eine der progressivsten verfassungsrechtlichen Demokratien der Welt.",
+                impact: "Symbolkraft für den weltweiten Sieg der Gleichberechtigung.",
+                icon: "award"
+            },
+            {
+                id: 9,
+                year: "2010 – 2012",
+                era: "2010-2026",
+                type: "hybrid",
+                title: "Arabischer Frühling & Schnelles Dämpfer-Erlebnis",
+                shortDesc: "Massenproteste im Nahen Osten fordern Demokratie; führen aber meist zu neuen Autokratien.",
+                fullDesc: "Proteste stürzen Diktatoren in Tunesien, Ägypten und Libyen. Während Tunesien kurzzeitig demokratisch wird, kippen die meisten Länder rasch zurück in Bürgerkriege oder noch härtere Autokratien.",
+                impact: "Wendepunkt: Das Scheitern von Demokratiehoffnungen im Nahen Osten.",
+                icon: "flame"
+            },
+            {
+                id: 10,
+                year: "2015 – 2026",
+                era: "2010-2026",
+                type: "autocracy",
+                title: "Die 3. Autokratisierungswelle & Digitaler Totalitarismus",
+                shortDesc: "Schleichende Aushöhlung von innen (Illiberale Demokratien, Desinformation, KI-Überwachung).",
+                fullDesc: "Anders als im 20. Jahrhundert sterben Demokratien heute selten durch Militärputsche, sondern durch gewählte Autokraten, die Justiz und Medien systematisch schwächen. Der Aufstieg Chinas und Russlands befeut die weltweite 'Autokratisierung'.",
+                impact: "Demokratischer Rückschritt auf den Stand vor 1990.",
+                icon: "cpu"
+            }
+        ];
+
+        // Historical Ratio Data (Democracy vs Autocracy percentages of world states)
+        const ratioData = {
+            labels: ['1925', '1935', '1945', '1955', '1965', '1975', '1985', '1995', '2005', '2015', '2026'],
+            democracies: [30, 20, 25, 35, 32, 33, 40, 58, 62, 54, 44], // Estimated historical percentages
+            autocracies: [70, 80, 75, 65, 68, 67, 60, 42, 38, 46, 56]
+        };
+
+        // Render Chart
+        let ratioChart;
+        function initChart() {
+            const ctx = document.getElementById('ratioChart').getContext('2d');
+            
+            const isDark = document.documentElement.classList.contains('dark');
+            const textColor = isDark ? '#94a3b8' : '#475569';
+            const gridColor = isDark ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.05)';
+
+            ratioChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ratioData.labels,
+                    datasets: [
+                        {
+                            label: 'Demokratien (%)',
+                            data: ratioData.democracies,
+                            borderColor: '#3b82f6',
+                            backgroundColor: 'rgba(59, 130, 246, 0.15)',
+                            fill: true,
+                            tension: 0.4,
+                            pointRadius: 4,
+                            pointHoverRadius: 7
+                        },
+                        {
+                            label: 'Autokratien (%)',
+                            data: ratioData.autocracies,
+                            borderColor: '#ef4444',
+                            backgroundColor: 'rgba(239, 68, 68, 0.15)',
+                            fill: true,
+                            tension: 0.4,
+                            pointRadius: 4,
+                            pointHoverRadius: 7
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false,
+                            backgroundColor: isDark ? '#1e293b' : '#ffffff',
+                            titleColor: isDark ? '#ffffff' : '#0f172a',
+                            bodyColor: isDark ? '#cbd5e1' : '#334155',
+                            borderColor: isDark ? '#334155' : '#e2e8f0',
+                            borderWidth: 1
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { color: gridColor },
+                            ticks: { color: textColor }
+                        },
+                        y: {
+                            min: 0,
+                            max: 100,
+                            grid: { color: gridColor },
+                            ticks: { 
+                                color: textColor,
+                                callback: function(value) { return value + '%'; }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Render Timeline Cards
+        function renderTimeline(filterEra = 'all') {
+            const timelineContainer = document.getElementById('timelineList');
+            timelineContainer.innerHTML = '';
+
+            const filteredData = filterEra === 'all' 
+                ? timelineData 
+                : timelineData.filter(item => item.era === filterEra);
+
+            document.getElementById('showingCount').textContent = `Zeige ${filteredData.length} von ${timelineData.length} Meilensteinen`;
+
+            filteredData.forEach((item, index) => {
+                const isEven = index % 2 === 0;
+                const isDemocracy = item.type === 'democracy';
+                const isHybrid = item.type === 'hybrid';
+
+                // Color Themes
+                let borderGlow = isDemocracy ? 'border-blue-500/30 hover:border-blue-500' : (isHybrid ? 'border-amber-500/30 hover:border-amber-500' : 'border-red-500/30 hover:border-red-500');
+                let badgeBg = isDemocracy ? 'bg-blue-500/20 text-blue-400 border-blue-500/30' : (isHybrid ? 'bg-amber-500/20 text-amber-400 border-amber-500/30' : 'bg-red-500/20 text-red-400 border-red-500/30');
+                let iconColor = isDemocracy ? 'text-blue-400' : (isHybrid ? 'text-amber-400' : 'text-red-400');
+                let typeLabel = isDemocracy ? 'Demokratisierungs-Schub' : (isHybrid ? 'Umbruch / Ungewiss' : 'Autokratisierungs-Schub');
+
+                const cardHTML = `
+                    <div class="relative flex flex-col lg:flex-row items-center ${isEven ? 'lg:flex-row-reverse' : ''} group">
+                        
+                        <!-- Timeline Node Center Icon -->
+                        <div class="absolute left-4 lg:left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full glass-panel border-2 ${isDemocracy ? 'border-blue-500 bg-slate-900' : (isHybrid ? 'border-amber-500 bg-slate-900' : 'border-red-500 bg-slate-900')} flex items-center justify-center z-10 shadow-lg group-hover:scale-110 transition-transform">
+                            <i data-lucide="${item.icon}" class="w-5 h-5 ${iconColor}"></i>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="w-full lg:w-1/2 pl-12 lg:pl-0 ${isEven ? 'lg:pr-12 lg:text-right' : 'lg:pl-12'}">
+                            <div onclick="openModal(${item.id})" class="glass-panel p-6 rounded-2xl border ${borderGlow} transition-all duration-300 hover:shadow-xl cursor-pointer hover:-translate-y-1">
+                                <div class="flex items-center gap-2 mb-2 ${isEven ? 'lg:justify-end' : 'justify-start'}">
+                                    <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold border ${badgeBg}">
+                                        ${item.year}
+                                    </span>
+                                    <span class="text-[11px] font-semibold text-slate-400">
+                                        ${typeLabel}
+                                    </span>
+                                </div>
+                                
+                                <h4 class="text-lg font-bold text-white light:text-slate-900 mb-2 group-hover:text-blue-400 transition-colors">
+                                    ${item.title}
+                                </h4>
+                                
+                                <p class="text-xs text-slate-300 light:text-slate-600 leading-relaxed mb-4">
+                                    ${item.shortDesc}
+                                </p>
+
+                                <div class="flex items-center gap-1 text-xs font-semibold text-blue-400 group-hover:underline ${isEven ? 'lg:justify-end' : 'justify-start'}">
+                                    <span>Mehr Details & Auswirkung lesen</span>
+                                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                timelineContainer.innerHTML += cardHTML;
+            });
+
+            // Re-initialize Lucide Icons
+            lucide.createIcons();
+        }
+
+        // Modal Handlers
+        function openModal(id) {
+            const item = timelineData.find(d => d.id === id);
+            if(!item) return;
+
+            document.getElementById('modalYear').textContent = item.year;
+            document.getElementById('modalTitle').textContent = item.title;
+            document.getElementById('modalCategory').textContent = item.type === 'democracy' ? 'Meilenstein der Demokratisierung' : 'Autokratischer Rückschritt';
+            document.getElementById('modalDesc').textContent = item.fullDesc;
+            document.getElementById('modalImpact').textContent = item.impact;
+
+            const modal = document.getElementById('eventModal');
+            const modalCard = document.getElementById('modalCard');
+
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modalCard.classList.remove('scale-95');
+            modalCard.classList.add('scale-100');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('eventModal');
+            const modalCard = document.getElementById('modalCard');
+
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalCard.classList.remove('scale-100');
+            modalCard.classList.add('scale-95');
+        }
+
+        // Setup Filter Buttons
+        document.getElementById('eraFilterContainer').addEventListener('click', (e) => {
+            const btn = e.target.closest('.era-btn');
+            if(!btn) return;
+
+            document.querySelectorAll('.era-btn').forEach(b => {
+                b.classList.remove('bg-blue-600', 'text-white', 'shadow-lg');
+                b.classList.add('bg-slate-800', 'text-slate-300');
+            });
+
+            btn.classList.remove('bg-slate-800', 'text-slate-300');
+            btn.classList.add('bg-blue-600', 'text-white', 'shadow-lg');
+
+            const era = btn.getAttribute('data-era');
+            renderTimeline(era);
+        });
+
+        // Theme Toggle (Dark/Light Mode)
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            document.documentElement.classList.toggle('light');
+            
+            // Re-render chart to adjust colors
+            if (ratioChart) {
+                ratioChart.destroy();
+                initChart();
+            }
+        });
+
+        document.getElementById('closeModal').addEventListener('click', closeModal);
+        document.getElementById('eventModal').addEventListener('click', (e) => {
+            if(e.target === document.getElementById('eventModal')) closeModal();
+        });
+
+        // Initialize on DOM Load
+        window.onload = function() {
+            initChart();
+            renderTimeline('all');
+            lucide.createIcons();
+        };
+    </script>
+</body>
+</html>
