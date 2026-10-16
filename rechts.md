@@ -257,7 +257,7 @@ Bundesregierung, den juristischen Weg vor dem Bundesverfassungsgericht einzuleit
 ---
 
 <br>&nbsp;
-<br>&nbsp;
+<iframe src="{{ '/demokratie_timeline.html' | relative_url }}" width="100%" height="750px" style="border:none; overflow:hidden;" scrolling="no"></iframe>
 <br>&nbsp;
 
 ---
