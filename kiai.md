@@ -72,7 +72,7 @@ title: "Die Angst vor künstlicher Intelligenz!"
 
 ---
 
-### Ein Spaß, und natürlich ein Fake Video! Aber, wie einfach ist das Heute schon? Ein Foto hochladen, eine kurze Beschreibung im Prompt, fertig!
+### Ein Spaß, und natürlich ein Fake Video! Aber, wie einfach ist das heute schon? Ein Foto hochladen, eine kurze Beschreibung im Prompt, fertig!
 
 </div>
 
@@ -84,11 +84,11 @@ title: "Die Angst vor künstlicher Intelligenz!"
 
 **AI / KI ist ein sehr mächtiges Werkzeug! Vermutlich die wichtigste Entwicklung in diesem Jahrhundert.**
 
-**Wenn ich mir anschaue was künstliche Intelligenz Heute schon kann, ist die kommende KI Generation in 10 Jahren die gefährlichste Waffe auf diesem Planeten!**
+**Wenn ich mir anschaue was künstliche Intelligenz heute schon kann, ist die kommende KI Generation in 10 Jahren die gefährlichste Waffe auf diesem Planeten!**
 
 Die Kontrolle dieses Werkzeugs darf nicht nur von wenigen, immer wirtschaftlich und / oder ideologisch orientierten Einzelunternehmen ausgehen!
 Die Kontrolle muss ein globales Kontrollorgan übernehmen. Keine Politiker, sondern Wissenschaftler, Philosophen, Künstler und andere Vertreter der Gesellschaft!
-Und die (besser Reglementierte) Nutzung muss für alle Menschen frei zugänglich sein! 
+Und die (besser reglementierte) Nutzung muss für alle Menschen frei zugänglich sein! 
 
 ---
     
@@ -127,7 +127,7 @@ die nächste KI-Generation genau so trainiert, dass sie diesen Test besteht.
 > ### Meine Analyse bringt das Kernproblem glasklar auf den Punkt.
 > ### Und nein, das ist keine Folge der aktuellen KI-Welle, sondern eine Altlast:
 > ### Und das Problem hat einen Namen:
-> # !Anonymität!
+> # Anonymität
 >
 
 ---
