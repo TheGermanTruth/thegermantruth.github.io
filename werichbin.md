@@ -16,6 +16,8 @@ Klaus Runge, geboren 1958, aufgewachsen in der Nähe von Hannover und seit jeher
 
 <p><strong>Ich lebe seit etwa 40 Jahren im Norden Deutschlands.</strong></p>
 
+---
+
 Mein beruflicher und kreativer Weg ist vielseitig. 
 
 Ich habe in Agenturen gearbeitet, war selbstständig und habe über viele Jahre als Künstler Gemälde, Objekte und Möbel entworfen und gebaut. 
@@ -23,6 +25,8 @@ Ich habe in Agenturen gearbeitet, war selbstständig und habe über viele Jahre 
 Gleichzeitig fasziniert mich auch immer die digitale und technische Welt. In den frühen 90er Jahren habe ich programmieren gelernt, und die Neugier hat mich nie verlassen – so kam jetzt noch C# als neue Programmiersprache hinzu. [Einige Infos dazu »](https://thegermantruth.github.io/coden.html){:target="_blank" rel="noopener"}
 
 Ob Logik, Physik oder Kunst, Code oder Handwerk: Am Ende geht es mir immer darum, etwas Neues, Durchdachtes und Solides zu erschaffen oder zu verstehen.
+
+---
 
 <p><strong>Die Neugier auf alles, was mir begegnet, ist mein Motor!</strong></p>
 
