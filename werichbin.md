@@ -7,8 +7,11 @@ title: "Klaus Runge. Ich möchte Dinge nicht nur nutzen, sondern verstehen und g
 
 <div class="column" markdown="1">
 
+---
 
 # Ich bin
+
+---
 
 Klaus Runge, geboren 1958, aufgewachsen in der Nähe von Hannover und seit jeher getrieben von einer einfachen Motivation: 
 
