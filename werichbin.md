@@ -36,6 +36,8 @@ Ob Logik, Physik oder Kunst, Code oder Handwerk: Am Ende geht es mir immer darum
 Seit 2024 bin ich Rentner, bleibe aber weiterhin in Teilzeit aktiv. Die abwechslungsreichen Aufgaben und der tägliche Austausch mit Menschen sind mir nach wie vor eine große Freude.
 
 </div>
+
+</div>
     
 <div class="column" markdown="1" style="text-align: center;">
 
@@ -45,7 +47,7 @@ Seit 2024 bin ich Rentner, bleibe aber weiterhin in Teilzeit aktiv. Die abwechsl
     
 </div>
 
-</div>
+
 
 <hr>
 
