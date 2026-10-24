@@ -54,6 +54,7 @@ nav a:hover {
   gap: 40px; /* Abstand zwischen den Spalten */
   max-width: 1400px;               /* Macht den Spaltenbereich kompakter (z.B. 800px statt 1100px) */
   margin: 0 auto;                 /* Zentriert das komplette 2-Spalten-Raster im weißen Kasten */
+  padding: 20px 40px; 
   box-sizing: border-box;
 }
 .section .two-columns {
