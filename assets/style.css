@@ -56,18 +56,21 @@ nav a:hover {
   margin: 0 auto;                 /* Zentriert das komplette 2-Spalten-Raster im weißen Kasten */
   box-sizing: border-box;
 }
-
+.section .two-columns {
+  width: 100%;
+}
 .one-column {
   display: block;
 }
 /* ==========================================
    NEU: Mobile Ansicht (Smartphones & kleine Tablets)
    ========================================== */
-@media (max-width: 768px) {
-  .section {
-    padding: 20px; /* Etwas weniger Rand auf Handys, damit mehr Platz bleibt */
-    margin: 10px;       /* Verhindert, dass der Kasten ganz am Bildschirmrand klebt */
+@media (min-width: 769px) {
+  /* Wenn das Grid aktiv ist, fängt es den Rand ab */
+  .two-columns {
+    padding: 0 10px; /* Justiere diesen Wert, falls es zu viel/wenig Abstand ist */
   }
+}
 
   .two-columns {
     grid-template-columns: 1fr; /* Schaltet von 2 Spalten auf 1 Spalte untereinander um! */
