@@ -35,11 +35,10 @@ Ob Logik, Physik oder Kunst, Code oder Handwerk: Am Ende geht es mir immer darum
 
 Seit 2024 bin ich Rentner, bleibe aber weiterhin in Teilzeit aktiv. Die abwechslungsreichen Aufgaben und der tägliche Austausch mit Menschen sind mir nach wie vor eine große Freude.
 
-</div>
 
 </div>
     
-<div class="column" markdown="1" style="text-align: center;">
+<div class="column" markdown="1">
 
 <a href="{{ '/images/Klaus_Runge.jpg' | relative_url }}" target="_blank" rel="noopener">
   <img src="{{ '/images/Klaus_Runge.jpg' | relative_url }}" alt="Porträtfoto von Klaus Runge" class="shadow-img" style="max-width: 280px; width: 100%; height: auto; border-radius: 6px;" />
@@ -47,7 +46,7 @@ Seit 2024 bin ich Rentner, bleibe aber weiterhin in Teilzeit aktiv. Die abwechsl
     
 </div>
 
-
+</div>
 
 
 
