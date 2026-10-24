@@ -17,7 +17,7 @@ Klaus Runge, geboren 1958, aufgewachsen in der Nähe von Hannover und seit jeher
 
 **Ich möchte Dinge nicht nur nutzen, sondern verstehen und gestalten.**
 
-<p><strong>Ich lebe seit etwa 40 Jahren im Norden Deutschlands.</strong></p>
+**Ich lebe seit etwa 40 Jahren im Norden Deutschlands.**
 
 ---
 
@@ -31,7 +31,7 @@ Ob Logik, Physik oder Kunst, Code oder Handwerk: Am Ende geht es mir immer darum
 
 ---
 
-<p><strong>Die Neugier auf alles, was mir begegnet, ist mein Motor!</strong></p>
+**Die Neugier auf alles, was mir begegnet, ist mein Motor!**
 
 Seit 2024 bin ich Rentner, bleibe aber weiterhin in Teilzeit aktiv. Die abwechslungsreichen Aufgaben und der tägliche Austausch mit Menschen sind mir nach wie vor eine große Freude.
 
@@ -49,10 +49,10 @@ Seit 2024 bin ich Rentner, bleibe aber weiterhin in Teilzeit aktiv. Die abwechsl
 
 
 
-<hr>
+
 
 <div class="section one-column" align="center" markdown="1">
 
-<p>Diese Webseiten sind rein privat. Sie dienen ausschließlich dem Zweck, meine Gedanken zu teilen! Juli 2026.</p>
+Diese Webseiten sind rein privat. Sie dienen ausschließlich dem Zweck, meine Gedanken zu teilen! Juli 2026.
 
 </div>
