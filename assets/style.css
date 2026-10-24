@@ -59,6 +59,21 @@ nav a:hover {
 .one-column {
   display: block;
 }
+/* ==========================================
+   NEU: Mobile Ansicht (Smartphones & kleine Tablets)
+   ========================================== */
+@media (max-width: 768px) {
+  .section {
+    padding: 15px 20px; /* Etwas weniger Rand auf Handys, damit mehr Platz bleibt */
+    margin: 10px;       /* Verhindert, dass der Kasten ganz am Bildschirmrand klebt */
+  }
+
+  .two-columns {
+    grid-template-columns: 1fr; /* Schaltet von 2 Spalten auf 1 Spalte untereinander um! */
+    gap: 20px;                  /* Reduziert den Abstand zwischen den gestapelten Elementen */
+  }
+}
+
 
 /* ===== Überschriften ===== */
 h1, h2, h3 {
