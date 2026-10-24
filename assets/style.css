@@ -64,7 +64,7 @@ nav a:hover {
    ========================================== */
 @media (max-width: 768px) {
   .section {
-    padding: 15px 20px; /* Etwas weniger Rand auf Handys, damit mehr Platz bleibt */
+    padding: 20px; /* Etwas weniger Rand auf Handys, damit mehr Platz bleibt */
     margin: 10px;       /* Verhindert, dass der Kasten ganz am Bildschirmrand klebt */
   }
 
@@ -73,7 +73,13 @@ nav a:hover {
     gap: 20px;                  /* Reduziert den Abstand zwischen den gestapelten Elementen */
   }
 }
-
+/* Stellt sicher, dass Bilder in den Spalten nie breiter als ihr Container sind */
+.two-columns img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px; /* Optional: Schöne abgerundete Ecken auf dem Handy */
+}
 
 /* ===== Überschriften ===== */
 h1, h2, h3 {
