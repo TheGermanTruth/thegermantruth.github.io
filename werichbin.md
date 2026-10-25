@@ -40,8 +40,8 @@ Seit 2024 bin ich Rentner, bleibe aber weiterhin in Teilzeit aktiv. Die abwechsl
     
 <div class="column" markdown="1">
 
-<a href="{{ '/images/Klaus_Runge.jpg' | relative_url }}" target="_blank" rel="noopener">
-  <img src="{{ '/images/Klaus_Runge.jpg' | relative_url }}" alt="Porträtfoto von Klaus Runge" class="shadow-img" style="max-width: 280px; width: 100%; height: auto; border-radius: 6px;" />
+<a href="{{ '/images/Klaus_Runge.jpg' | relative_url }}" target="_blank" rel="noopener" style="display: block; width: 90%;">
+  <img src="{{ '/images/Klaus_Runge.jpg' | relative_url }}" alt="Porträtfoto von Klaus Runge" class="shadow-img" style="width: 90%; height: auto; border-radius: 6px;" />
 </a>
     
 </div>
