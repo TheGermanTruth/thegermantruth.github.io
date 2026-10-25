@@ -79,6 +79,8 @@ nav a:hover {
   width: 100%;
   margin: 10px auto;
   box-sizing: border-box;
+  margin-left: 10px;  /* Außenabstand links */
+  margin-right: 10px; /* Außenabstand rechts */
 }
 
 /* Ab Tablet (Querformat) & Desktop: 2 Spalten nebeneinander */
@@ -87,6 +89,8 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 10px auto;
+     margin-left: 10px;  /* Außenabstand links */
+  margin-right: 10px; /* Außenabstand rechts */
   }
 }
 
