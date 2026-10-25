@@ -49,9 +49,9 @@ nav a:hover {
 .section {
   background: white;
   margin: 15px auto;
-  padding: 20px 15px; /* Auf Handys schlankerer Rand, damit mehr Platz für Text ist */
-  width: calc(100% - 20px); /* Kleiner Abstand zum Displayrand auf mobilen Geräten */
-  max-width: 1400px;
+  /* Sorgt dafür, dass IMMER links und rechts Luft zum Bildschirmrand bleibt: */
+  width: min(1400px, calc(100% - 30px)); 
+  padding: 20px 15px; /* Innenabstand für Handys */
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   border-radius: 6px;
 }
@@ -71,15 +71,14 @@ nav a:hover {
   width: 100%;
 }
 
-/* ===== Zweispaltige Ansicht (Mobile First) ===== */
-/* Standardmäßig (Mobilgeräte): 1 Spalte untereinander */
+/* ===== Zweispaltige Ansicht ===== */
 .two-columns {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   width: 100%;
   margin: 0 auto;
-  padding: 5px 0;
+  box-sizing: border-box;
 }
 
 /* Ab Tablet (Querformat) & Desktop: 2 Spalten nebeneinander */
