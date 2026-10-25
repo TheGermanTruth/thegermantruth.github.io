@@ -1,31 +1,41 @@
+/* ===== Grund-Reset & Box-Sizing ===== */
+*, *::before, *::after {
+  box-sizing: border-box; /* Verhindert horizontales Scrollen/Überlaufen durch Padding */
+}
+
 /* ===== Grundlayout ===== */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif; /* Moderne, klare Schrift */
+  font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f5f7fa; /* Sehr helles Grau-Blau als Hintergrund */
-  color: #333; /* Dunkles Grau für Text */
+  background-color: #f5f7fa;
+  color: #333;
 }
 
 /* ===== Menü ===== */
 nav {
-  background-color: #211c15; /* Dunkles Braun */
-  padding: 20px;
+  background-color: #211c15;
+  padding: 15px 20px;
   text-align: center;
   position: sticky;
   top: 0;
   z-index: 1000;
+  /* Flexbox sorgt dafür, dass Links auf Smartphones sauber umbrechen */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 nav a {
-  color: #ecf0f1; /* Helles Grau-Weiß */
-  margin: 0 15px;
+  color: #ecf0f1;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: #cca239; /* Türkis-Akzent beim Hover */
+  color: #cca239;
 }
 
 /* ===== Banner ===== */
@@ -37,64 +47,72 @@ nav a:hover {
 
 /* ===== Inhaltsbereiche ===== */
 .section {
-  /*padding-left: 50px;*/
-  padding: 20px 40px; /* Gleichmäßiger Abstand links und rechts */
   background: white;
-  margin: 20px auto;
+  margin: 15px auto;
+  padding: 20px 15px; /* Auf Handys schlankerer Rand, damit mehr Platz für Text ist */
+  width: calc(100% - 20px); /* Kleiner Abstand zum Displayrand auf mobilen Geräten */
   max-width: 1400px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   border-radius: 6px;
-  
-
 }
 
-.two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 gleich große Spalten */
-  gap: 40px; /* Abstand zwischen den Spalten */
-  max-width: 1400px;               /* Macht den Spaltenbereich kompakter (z.B. 800px statt 1100px) */
-  margin: 0 auto;                 /* Zentriert das komplette 2-Spalten-Raster im weißen Kasten */
-  padding: 10px 10px; 
-  box-sizing: border-box;
+/* Ab Tablets & PCs mehr Innenabstand im weißen Kasten */
+@media (min-width: 768px) {
+  .section {
+    padding: 30px 40px;
+    margin: 25px auto;
+    width: 100%;
+  }
 }
-.section .two-columns {
-  width: 100%;
-}
+
+/* ===== Einspaltige Ansicht ===== */
 .one-column {
   display: block;
+  width: 100%;
 }
-/* ==========================================
-   NEU: Mobile Ansicht (Smartphones & kleine Tablets)
-   ========================================== */
-@media (min-width: 769px) {
-  /* Wenn das Grid aktiv ist, fängt es den Rand ab */
+
+/* ===== Zweispaltige Ansicht (Mobile First) ===== */
+/* Standardmäßig (Mobilgeräte): 1 Spalte untereinander */
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+/* Ab Tablet (Querformat) & Desktop: 2 Spalten nebeneinander */
+@media (min-width: 768px) {
   .two-columns {
-    padding: 0 10px; /* Justiere diesen Wert, falls es zu viel/wenig Abstand ist */
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 10px 0;
   }
 }
 
-  .two-columns {
-    grid-template-columns: 1fr; /* Schaltet von 2 Spalten auf 1 Spalte untereinander um! */
-    gap: 20px;                  /* Reduziert den Abstand zwischen den gestapelten Elementen */
-  }
-}
-/* Stellt sicher, dass Bilder in den Spalten nie breiter als ihr Container sind */
-.two-columns img {
+/* Bilder in Spalten & Abschnitten flüssig skalieren */
+.section img,
+.two-columns img,
+.one-column img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 4px; /* Optional: Schöne abgerundete Ecken auf dem Handy */
+}
+
+.two-columns img {
+  border-radius: 4px;
 }
 
 /* ===== Überschriften ===== */
 h1, h2, h3 {
-  color: #211c15; /* Gleiche Farbe wie Menü für Konsistenz */
+  color: #211c15;
   margin-top: 0;
 }
 
 /* ===== Links im Text ===== */
 .section a {
-  color: #471fa3; /* Türkis-Akzent */
+  color: #471fa3;
   text-decoration: none;
 }
 
@@ -105,48 +123,40 @@ h1, h2, h3 {
 /* ===== Schatten-Effekt ===== */
 .shadow-img {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 4px; /* Optional: Rundet die Ecken des Bildes minimal ab */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Bereitet Hover-Effekt vor */
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-
-/* ===== Schatten-Effekt bei Mauszeiger (Hover) ===== */
+/* Schatten-Effekt bei Hover */
 .shadow-img:hover {
-  transform: translateY(-2px); /* Bild hebt sich leicht an */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* Schatten wird tiefer */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 /* ===== Galerie ===== */
-
-/* 1. Haupt-Grid: Passt Spalten automatisch an */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* Automatische Spalten: passt auf jedes Display (Handy ca. 2 Spalten, Desktop mehr) */
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 15px;
   margin-top: 20px;
 }
 
-/* 2. Link-Container: Erzwingt das quadratische Format (1/1) */
 .gallery-grid a {
   display: block;
   overflow: hidden;
   border-radius: 8px;
-  aspect-ratio: 1 / 1; /* Macht alle Felder automatisch quadratisch */
+  aspect-ratio: 1 / 1; /* Quadratisches Format */
 }
 
-/* 3. Bild: Schneidet das Original sauber zu ohne zu verzerren */
 .gallery-grid img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Verhindert Verzerrung */
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
 }
 
-/* 4. Hover-Effekt beim Drüberfahren */
 .gallery-grid a:hover img {
   transform: scale(1.05);
 }
-
-
-
