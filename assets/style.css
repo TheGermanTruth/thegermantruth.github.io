@@ -10,17 +10,22 @@ body {
   line-height: 1.6;
   background-color: #e6e6e6;
   color: #333;
+    /* Garantiert IMMER 15px Abstand links und rechts zum Bildschirmrand */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/* ===== Menü ===== */
+/* ===== Menü (wichtig: soll trotz Body-Abstand ganz an den Rand gehen) ===== */
 nav {
+  /* Zieht das Menü wieder an den vollen Bildschirmrand */
+  margin-left: -15px;
+  margin-right: -15px;
   background-color: #211c15;
   padding: 15px 20px;
   text-align: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  /* Flexbox sorgt dafür, dass Links auf Smartphones sauber umbrechen */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -56,12 +61,11 @@ nav a:hover {
   border-radius: 6px;
 }
 
-/* Ab Tablet & Desktop: mehr Innen- und Außenabstand */
+/* Auf größeren Bildschirmen (ab Tablet/PC) etwas mehr Außenabstand (z.B. 30px) */
 @media (min-width: 768px) {
-  .section {
-    width: min(1400px, calc(100% - 60px)); /* Mindestens 30px Abstand links & rechts zum Displayrand */
-    padding: 35px 40px; /* Großzügiger Innenabstand */
-    margin: 30px auto;
+  body {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
