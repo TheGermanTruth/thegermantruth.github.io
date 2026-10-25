@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
-  background-color: #949494;
+  background-color: #e6e6e6;
   color: #333;
 }
 
@@ -50,8 +50,8 @@ nav a:hover {
   background: white;
   margin: 15px auto;
   /* Sorgt dafür, dass IMMER links und rechts Luft zum Bildschirmrand bleibt: */
-  width: min(1400px, calc(100% - 30px)); 
-  padding: 20px 15px; /* Innenabstand für Handys */
+  width: min(1400px, calc(100% - 40px)); 
+  padding: 20px 20px; /* Innenabstand für Handys */
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   border-radius: 6px;
 }
@@ -85,8 +85,8 @@ nav a:hover {
 @media (min-width: 768px) {
   .two-columns {
     grid-template-columns: 1fr 1fr;
-    gap: 40px;          /* Abstand zwischen den beiden Spalten */
-    padding: 0 10px;    /* Zusätzlicher Puffer zu den Seiten des Kastens */
+    gap: 30px;          /* Abstand zwischen den beiden Spalten */
+    padding: 0 15px;    /* Zusätzlicher Puffer zu den Seiten des Kastens */
   }
 }
 
