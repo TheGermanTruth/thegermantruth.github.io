@@ -3,6 +3,10 @@ layout: default
 title: "Klaus Runge. Ich möchte Dinge nicht nur nutzen, sondern verstehen und gestalten."
 ---
 
+<div class="column" markdown="1">
+---
+</div>
+
 <div class="two-columns" markdown="1">
 
 <div class="column" markdown="1">
