@@ -73,9 +73,7 @@ title: "Perspektiven für die drängenden Fragen unserer Zeit"
    
 ×juli 2026×
 
-<a href="https://hits.seeyoufarm.com">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fthegermantruth.github.io&count_bg=%23795548&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Aufrufe&edge_flat=false"/>
-</a>
+[![Aufrufe](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fthegermantruth.github.io&title=Aufrufe)](https://hits.seeyoufarm.com)
 
 ---
 
