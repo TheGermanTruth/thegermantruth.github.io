@@ -7,50 +7,50 @@ layout: null
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://thegermantruth.github.io/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/coden.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/coden</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/datenschutz.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/datenschutz</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/demokratie_timeline.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/geld</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/geld.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/gespraech</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/gespraech.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/gesundheit</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/gesundheit.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/impressum</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/impressum.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/kiai</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/kiai.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/klima</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/klima.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/rechts</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/rechts.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/werichbin</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
-    <loc>https://thegermantruth.github.io/werichbin.html</loc>
-    <lastmod>2026-10-29</lastmod>
+    <loc>https://thegermantruth.github.io/demokratie_timeline</loc>
+    <lastmod>2026-10-31</lastmod>
   </url>
 </urlset>
