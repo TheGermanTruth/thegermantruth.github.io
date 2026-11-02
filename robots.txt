@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thegermantruth.github.io/sitemap.xml
+Sitemap: https://thegermantruth.github.io/sitemap_index.xml
