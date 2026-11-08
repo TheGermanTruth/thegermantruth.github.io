@@ -1,6 +1,7 @@
 ---
 permalink: /impressum.html
 title: "Impressum"
+sitemap: false
 ---
 
 <div class="section one-column" markdown="1">
