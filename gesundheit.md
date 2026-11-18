@@ -8,6 +8,7 @@ title: "Das deutsche Gesundheitssystem ist krank!"
 ---
 
 # Sozialstaat? Sozialabgaben? Krankenversicherung? Zwangsabgaben? Armut?
+Jul 18, 2026
 
 ---
 
