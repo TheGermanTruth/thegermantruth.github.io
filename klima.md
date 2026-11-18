@@ -8,6 +8,7 @@ title: "Klimawandel und Klimakrise. Die Co2 Lüge"
 ---
 
 # Klimawandel und Klimakrise
+Jul 27, 2026
 
 ---
 
