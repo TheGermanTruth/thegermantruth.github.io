@@ -8,6 +8,7 @@ title: "Verfassungswidrig, Rechtsextremistisch. Individuelle Freiheit vernichtet
 ---
 
 # Ethnopluralismus ● Schuldkult ● Umvolkung ● Systempresse ● Deutschland den Deutschen ● Alles für Deutschland ● Blut und Boden ● Meine Ehre heißt Treue ● White Power
+Jul 24, 2026
 
 ---
 
