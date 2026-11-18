@@ -8,6 +8,7 @@ title: "Die Angst vor künstlicher Intelligenz!"
 ---
 
 # Die Angst vor künstlicher Intelligenz, und die dringende Frage: Was ist Wahrheit?
+Jul 29, 2026
 
 ---
 
