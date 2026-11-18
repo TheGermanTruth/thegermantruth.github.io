@@ -8,6 +8,7 @@ title: "Perspektiven für die drängenden Fragen unserer Zeit"
 ---
    
 # Willkommen bei The German Truth
+Jul 22, 2026
 
 ---
 
